@@ -1,5 +1,5 @@
 // verificare se una stringa dell'utente sia palindroma
-userWord = prompt('inserisci la parola da verificare');
+const userWord = prompt('inserisci la parola da verificare');
 console.log(userWord);
 
 
@@ -24,5 +24,5 @@ function verificaPalindromi(word){
 }
 
 
-test = verificaPalindromi(userWord);
+const test = verificaPalindromi(userWord);
 alert(test);

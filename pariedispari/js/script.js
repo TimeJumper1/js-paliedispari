@@ -1,13 +1,13 @@
 // creare il gioco pari e dispari
 // utente sceglie pari o dispari
-userChoice = prompt('scegli se vuoi essere pari o dispari');
+const userChoice = prompt('scegli se vuoi essere pari o dispari');
 
 console.log(userChoice);
 // verificare la scelta?
 
 
 // utente sceglie un numero
-userNumber = parseInt(prompt('scegli un numero fra 1 e 5 (inclusi)'))
+const userNumber = parseInt(prompt('scegli un numero fra 1 e 5 (inclusi)'))
 console.log(userNumber);
 
 // funzione
@@ -19,22 +19,21 @@ function evenOrOdd(number){
     resultNumber = pcNumber + number ;
     // verificare se il numero è pari o dispari
     if (resultNumber % 2 === 0){
-        result = 'pari'
+         result = 'pari'
     }else {
-        result = 'dispari'
+         result = 'dispari'
     }
     return result
 }
 
 
-test = evenOrOdd(userNumber)
+ const test = evenOrOdd(userNumber)
 // mandare il relativo messaggio all'utente
 if(userChoice === test){
     alert('congratulazioni hai vinto')
 }else {
     alert('peccato hai perso')
 }
-
 
 
 
